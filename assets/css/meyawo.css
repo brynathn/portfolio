@@ -498,7 +498,6 @@ h6,
     100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
   }
   .marquee-content li{
-    margin-top: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -511,9 +510,23 @@ h6,
   }
   
   .marquee-content li img {
-    height: 330px;
+    height: 200px;
     transition: 0.5s;
   }
+  
+@media (max-width: 765px) {
+   .marquee-content li img {
+    height: 100px;
+    transition: 0.5s;
+  }      
+}
+@media (max-width: 480px) {
+   .marquee-content li img {
+    height: 50px;
+    transition: 0.5s;
+  }      
+}
+
 
 hr {
   margin-top: 1rem;
